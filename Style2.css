@@ -1,0 +1,216 @@
+
+body {
+  margin: 0px;
+}
+
+header {
+display: flex;
+background-color: #0077cc;
+color: white;
+padding: 10px 20px;
+font-weight: bold;
+font-family: Monospace;
+font-style: bold;
+border: 2px solid #005599;
+}
+.profile {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+.header
+{
+display:flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 15px;
+align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .profile {
+    height: 120px;
+    width: 120px;
+  }
+
+  .header h1 {
+    font-size: 40px;
+  }
+.hedbut {
+    width: 260px;
+    margin-top: 10px;
+    gap: 265px;
+  }
+
+  .hedbut button {
+    width: 180px;
+    height: 80px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+}
+#main
+{
+margin:20px;
+}
+h1
+{
+margin:0px;
+
+}
+.hedbut
+{
+display: flex;
+justify-content: space-between;
+width:200px;
+margin-top: 6px;
+gap: 150px;
+}
+
+.hedbut button 
+{
+color: #0077cc;
+background-color: white;
+border: none;
+border-radius: 5px;
+width:60px;
+height: 30px;
+}
+#menuit
+{
+background-color: #005599;
+display: none;
+flex-wrap: wrap;
+justify-content: center;
+padding: 10px 0;
+gap: 500px;
+}
+#menuit button 
+{
+background-color: transparent;
+color: white;
+text-decoration: none;
+display: inline-block;
+width: auto;
+font-family: Monospace;
+font-size: 18px;
+border: none;
+border-radius: 4px;
+margin: 2px 5px;
+padding: 2px 4px;
+transition: background-color 0.3s;
+}
+#menuit button:hover
+{
+background-color: white;
+color: #005599;
+}
+@media (max-width: 600px) {
+  #menuit {
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    gap: 60px;
+  }
+
+  #menuit button {
+    font-size: 14px;
+    width: auto;
+    padding: 6px 8px;
+    text-align: center;
+  }
+}
+section 
+{
+margin: 15px;
+text-align: justify;
+}
+.content.active
+{
+display: block;
+}
+.content
+{
+display: none;
+padding-bottom: 100px;
+}
+.subhed
+{
+font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+font-family: Monospace;
+color: #005599;
+}
+h2.hd {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+font-family: Monospace;
+color: #005599;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+font-family: Monospace;
+}
+#down a
+{
+display: inline-block;
+background-color: #0077cc;
+border-radius: 4px;
+text-decoration: none;
+color: white;
+padding: 5px 10px;
+}
+.contact-box {
+  border: 2px solid #0077cc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f5faff;
+  max-width: 500px;
+  margin: auto;
+}
+.mail a
+{
+text-decoration: none;
+display: inline-block;
+color: #cc3300;
+}
+.in a
+{
+text-decoration: none;
+display: inline-block;
+color: #0077cc;
+}
+@media (min-width: 768px)
+{#git a
+{
+font-size:40px;
+}}
+#foot {
+  padding: 10px 0;
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+border-top: 2px solid #005599;
+}
+footer p
+{
+font-size: 10px;
+}
+@media (min-width: 768px) {
+#foot {
+  padding: 2px 0;
+  font-size: 16px;
+}
+footer p {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+}
