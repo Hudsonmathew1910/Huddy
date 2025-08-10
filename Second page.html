@@ -1,26 +1,26 @@
 <!DOCTYPE html><html lang="en">
 <head>
-  <title>HuddyWeb</title>
+  <title>Huddy</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Title</title>
-  <link rel="icon" href="Untitled-1.png" type="image/png" sizes="96*96">
- <link rel="stylesheet" href="Style2.css">
-<script src="script.js"></script>
+ <link rel="stylesheet" href="Style css/Style2.css">
+<script src="JavaScript/script.js"></script>
 </head>
 <body>
 <header>
-    <img src="IMG_20250521_231505.jpg" class="profile" alt="profile photo">
+    <img src="Resources/IMG_20250521_231505.jpg" class="profile" alt="profile photo">
 <div class="header">
     <h1>Hudson Mathew J</h1>
     <div class="hedbut">
     <button type="button"
-onclick="window.location.href='index.html'">Back</button>
+onclick="window.location.href='First page.html'">Back</button>
 <button id="menu" onclick="togglemenu();">Menu</button>
 </div>
 </header>
 <nav id="menuit" class="hide">
     <button onclick="showSection('home')">Gratitude</button>
+    <button onclick="showSection('feedback-section')">Feedback</button>
     <button onclick="showSection('contact')">Contact</button>
   </nav>
 <main id="main">
@@ -30,8 +30,29 @@ onclick="window.location.href='index.html'">Back</button>
 <p>Your support means a lot to me and motivates me to keep improving.
 </p>
 <p>I hope you enjoyed exploring my work and found it interesting.</p>
-<p id="down" class="subhed">My Resume &emsp; <a href="CV.pdf" download>Download</a></p>
+<p id="down" class="subhed">My Resume &emsp; <a href="Resources/CV.pdf" download>Download</a></p>
 </section>
+
+<section id="feedback-section" class="content">
+  <h2 class="hd">Feedback</h2>
+  <p class="subhed">Share your thoughts</p>
+  <form id="feedback-form">
+    <label>Your Feedback:</label><br>
+    <textarea id="feedback" rows="5" cols="40" placeholder="Type your message..."></textarea><br><br>
+    <button type="submit" class="feedback-btn">Submit</button>
+  </form>
+</section>
+
+<script>
+  document.getElementById("feedback-form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    let feedbackText = document.getElementById("feedback").value; 
+let mailtoLink = "mailto:huddy1910@gmail.com?subject=" 
+               + encodeURIComponent("My feedback and suggestions for HuddyWeb") 
+               + "&body=" + encodeURIComponent(feedbackText);
+    window.location.href = mailtoLink; 
+  });
+</script>
 
 <section id="contact" class="content">
   <div class="contact-box">
