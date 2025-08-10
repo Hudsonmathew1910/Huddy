@@ -1,9 +1,7 @@
-function togglemenu()
-{
-const menuu=document.getElementById('menuit');
-if(menuu.style.display==='none')
-{menuu.style.display='flex';}
-else{menuu.style.display='none';}
+function togglemenu() {
+  const menuu = document.getElementById('menuit');
+  const isHidden = window.getComputedStyle(menuu).display === 'none';
+  menuu.style.display = isHidden ? 'flex' : 'none';
 }
 
 function showSection(id)
