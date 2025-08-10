@@ -69,7 +69,11 @@ header {
   background: #005599;
   color: white;
 }
-
+@media (max-width: 768px) {
+  #menuit {
+    gap: 50px; /* smaller gap on mobile */
+  }
+}
 /* Navigation */
 #menuit {
   background-color: #005599; 
