@@ -69,11 +69,7 @@ header {
   background: #005599;
   color: white;
 }
-@media (max-width: 768px) {
-  #menuit {
-    gap: 50px; /* smaller gap on mobile */
-  }
-}
+
 /* Navigation */
 #menuit {
   background-color: #005599; 
@@ -97,6 +93,13 @@ header {
   color: #004477;
   border-radius: 5px;
   padding: 5px 10px;
+}
+@media (max-width: 768px) {
+  #menuit {
+    flex-direction: row; 
+    gap: 80px; 
+    align-items: center; 
+  }
 }
 
 /* Sections */
