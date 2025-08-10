@@ -128,6 +128,30 @@ p {
   font-size: 15px;
 }
 
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #0077cc;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 14px;
+}
+
+/* form */
+form button {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #005599;
+}
+
+
 /* Download Link */
 #down a {
   background: #0077cc;
