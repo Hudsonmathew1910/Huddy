@@ -68,7 +68,7 @@ header {
   background-color: #005599;
   display: none;
   justify-content: center;
-  gap: 480px;
+  gap: 80px;
   padding: 10px 0;
   flex-wrap: wrap;
 }
