@@ -90,7 +90,7 @@ header {
 @media (max-width: 768px) {
   #menuit {
     flex-direction: row;
-    gap: 80px;
+    gap: 50px;
     align-items: center;
   }
 }
