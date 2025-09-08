@@ -4,15 +4,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 /* Body */
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: #fafcff;
+  background: #f4f8fc;
   color: #333;
   line-height: 1.6;
 }
-
+main {
+  padding-bottom: 60px;
+}
 /* Header */
 header {
   display: flex;
@@ -20,9 +21,8 @@ header {
   background: linear-gradient(135deg, #00aaff, #0066cc);
   color: white;
   padding: 15px 20px;
-  border-bottom: 3px solid #004477;
+  border-bottom: 1px solid #004477;
 }
-
 .profile {
   border-radius: 50%;
   height: 90px;
@@ -31,25 +31,21 @@ header {
   border: 3px solid white;
   box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
 }
-
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 15px;
 }
-
 .header h1 {
   font-size: 28px;
   letter-spacing: 1px;
 }
-
 .hedbut {
   display: flex;
   gap: 15px;
   margin-top: 8px;
 }
-
 .hedbut button {
   background: white;
   color: #0077cc;
@@ -59,13 +55,14 @@ header {
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 .hedbut button:hover {
-  background: #005599;
+  background: linear-gradient(135deg, #00aaff, #0066cc);
   color: white;
+  transition: 0.3s ease;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
 }
-
 /* Navigation */
 #menuit {
   background-color: #005599;
@@ -73,8 +70,8 @@ header {
   justify-content: center;
   gap: 480px;
   padding: 10px 0;
+  flex-wrap: wrap;
 }
-
 #menuit button {
   background: transparent;
   color: white;
@@ -83,21 +80,28 @@ header {
   cursor: pointer;
   transition: 0.3s;
 }
-
 #menuit button:hover {
   background: white;
   color: #004477;
   border-radius: 5px;
   padding: 5px 10px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 768px) {
   #menuit {
-    flex-direction: row; 
-    gap: 50px; 
-    align-items: center; 
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
   }
 }
-
+/* Para zoom */
+.zoom-hover {
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+.zoom-hover:hover {
+  transform: scale(1.2);
+}
 /* Sections */
 section {
   margin: 20px;
@@ -106,15 +110,12 @@ section {
   border-radius: 12px;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
 }
-
 .content {
   display: none;
 }
-
 .content.active {
   display: block;
 }
-
 h2.hd {
   font-size: 26px;
   color: #005599;
@@ -122,19 +123,24 @@ h2.hd {
   border-bottom: 2px solid #0077cc;
   padding-bottom: 4px;
 }
-
 .subhed {
   font-size: 18px;
   font-weight: bold;
   color: #0077cc;
   margin-bottom: 10px;
 }
-
+.subhed1 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #005599;
+  margin: 12px 0 6px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
 p {
   margin-bottom: 10px;
   font-size: 15px;
 }
-
 textarea {
   width: 100%;
   padding: 10px;
@@ -143,8 +149,15 @@ textarea {
   resize: vertical;
   font-size: 14px;
 }
-
-/* form */
+hr.section-divider {
+  border: none;              /* remove default line */
+  height: 1px;               /* thickness */
+  background-color: #0077cc; /* color of line */
+  margin: 20px 0;            /* top and bottom spacing */
+  width: 100%;                /* line length */
+  border-radius: 2px;        /* rounded edges */
+}
+/* Form */
 form button {
   background: #0077cc;
   color: white;
@@ -153,26 +166,22 @@ form button {
   border-radius: 6px;
   cursor: pointer;
 }
-
 form button:hover {
   background: #005599;
 }
-
-
 /* Download Link */
 #down a {
-  background: #0077cc;
+  background: #00aaff;
   color: white;
   padding: 6px 12px;
   border-radius: 6px;
   text-decoration: none;
-  transition: background 0.3s ease;
 }
-
 #down a:hover {
-  background: #004477;
+  background: linear-gradient(135deg, #00aaff, #0066cc);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.5s ease;
 }
-
 /* Contact Box */
 .contact-box {
   border: 2px solid #0077cc;
@@ -183,21 +192,18 @@ form button:hover {
   margin: auto;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
 }
-
 .mail a {
   color: #cc3300;
   text-decoration: none;
 }
-
 .in a {
   color: #0077cc;
   text-decoration: none;
 }
-
 /* Footer */
 #foot {
-  background: linear-gradient(135deg, #00aaff, #0066cc);
-  border-top: 3px solid #004477;
+  background: linear-gradient(135deg, #0066cc, #00aaff);
+  border-top: 1px solid #004477;
   color: white;
   text-align: center;
   padding: 12px 0;
@@ -205,11 +211,9 @@ form button:hover {
   width: 100%;
   bottom: 0;
 }
-
 footer p {
   font-size: 12px;
 }
-
 @media (min-width: 768px) {
   .profile {
     height: 120px;
